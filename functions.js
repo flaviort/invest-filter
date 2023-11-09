@@ -1,7 +1,7 @@
 // Function to fetch and display HTML data in the existing table
 function fetchHtmlAndDisplayTable() {
   // Fetch data from your own server
-  fetch('http://localhost:3001/fetch-data')
+  fetch('https://invest-filter.vercel.app//fetch-data')
     .then(response => {
       if (!response.ok) {
         throw new Error('Network response was not ok');
