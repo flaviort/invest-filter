@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang='pt-BR'>
+
+<head>
+	<link rel='stylesheet' href='main.css' type='text/css'>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<title>Filtros Investimentos</title>
+</head>
+
+<body>
+
+	<div class='filters'>
+
+		<p>
+			<b>
+				Filtros:
+			</b>
+		</p>
+
+		<div class="wrapper">
+			<input type="checkbox" id="hidePL" onchange="hidePL()">
+			<label for="hidePL">Esconder P/L abaixo de 15</label>
+		</div>
+
+		<div class="wrapper">
+			<input type="checkbox" id="hideROE" onchange="hideROE()">
+			<label for="hideROE">Esconder ROE abaixo de 15%</label>
+		</div>
+
+		<div class="wrapper">
+			<input type="checkbox" id="hideDY" onchange="hideDY()">
+			<label for="hideDY">Esconder DY abaixo de 4%</label>
+		</div>
+
+		<div class="wrapper">
+			<input type="checkbox" id="hideROIC" onchange="hideROIC()">
+			<label for="hideROIC">Esconder ROIC abaixo de 15%</label>
+		</div>
+
+		<div class="wrapper">
+			<input type="checkbox" id="hideCresc" onchange="hideCresc()">
+			<label for="hideCresc">Esconder Cresc. Rec. 5a abaixo de 15%</label>
+		</div>
+
+	</div>
+
+  	<table id='stockTable'></table>
+
+	<footer>
+		<script src='functions.js' defer></script>
+	</footer>
+
+</body>
+</html>

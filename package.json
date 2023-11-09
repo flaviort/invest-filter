@@ -1,0 +1,11 @@
+{
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "jsdom": "^22.1.0",
+    "node-fetch": "^2.6.1"
+  }
+}
